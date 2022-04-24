@@ -44,7 +44,5 @@ class Credentials:
     @classmethod
     def copy_credentials(cls, platform_name):
         """Method that allows a user to copy credentials using the platform_name"""
-        # found_credential = Credentials.search_credentials(platform_name)
-        # return pyperclip.copy(found_credential.platform_name)
         return pyperclip.copy(str(platform_name))
 
