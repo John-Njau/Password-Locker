@@ -7,7 +7,7 @@ Python application that allows user to centrally save credentials for their diff
 
 - [Description](#description)
 - [User Stories](#user-stories)
-- [Installation](#installation)
+- [Installation](#setup)
 - [Technologies Used](#technologies-used)
 - [Known Bugs](#known-bugs)
 - [License](#license)
@@ -56,7 +56,7 @@ These are the features of the application that helps the user interact with it.
         $ python3.8 users_test.py
         
 # Technologies Used
-* Python3.8
+* Python - version 3.8
 
 # Known Bugs
 
@@ -67,7 +67,7 @@ These are the features of the application that helps the user interact with it.
 This project is under the guidelines of [MIT License](https://github.com/John-Njau/My-Portfolio/blob/main/LICENSE).
 
 # Authors Info
-<p>&copy;2022 </p>
+
 
 Github - [John Njau](https://github.com/john-njau/)
 
@@ -75,3 +75,4 @@ Email - [Johnnjaunjoroge@gmail.com](johnnjaunjoroge@gmail.com)
 
 Linked In - [John Njau](https://www.linkedin.com/mwlite/in/john-njau-868b37213)
 
+<p>&copy;2022 </p>
