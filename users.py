@@ -11,8 +11,6 @@ class User:
         setting up a password locker account
         """
         self.name = name
-        # self.last_name = last_name
-        # self.email = email
         self.username = username
         self.password = password
 
