@@ -1,17 +1,17 @@
 from random import *
+import pyperclip
 
 
 class Credentials:
     """User credentials class, save information and generate passwords"""
+
+    credentials_list = []
 
     def __init__(self, platform_name, username, password):
         """Initializing the credentials class"""
         self.platform_name = platform_name
         self.username = username
         self.password = password
-        #
-
-    credentials_list = []
 
     def save_credentials(self):
         """Method to save credentials"""
@@ -30,7 +30,7 @@ class Credentials:
         return password
 
     @classmethod
-    def display_credentials(cls):
+    def display_credentials(cls, platform_name):
         """Returns all saved credentials"""
         return cls.credentials_list
 
@@ -40,3 +40,11 @@ class Credentials:
         for credential in cls.credentials_list:
             if credential.platform_name == platform_name:
                 return credential
+
+    @classmethod
+    def copy_credentials(cls, platform_name):
+        """Method that allows a user to copy credentials using the platform_name"""
+        # found_credential = Credentials.search_credentials(platform_name)
+        # return pyperclip.copy(found_credential.platform_name)
+        return pyperclip.copy(str(platform_name))
+
