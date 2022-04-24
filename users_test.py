@@ -23,8 +23,6 @@ class TestUser(unittest.TestCase):
     def test_init(self):
         """Testing if the user object is initialized properly"""
         self.assertEqual(self.new_user.name, "John")
-        # self.assertEqual(self.new_user.last_name, "Njau")
-        # self.assertEqual(self.new_user.email, "jd@mura.com")
         self.assertEqual(self.new_user.username, "JohnMichaels")
         self.assertEqual(self.new_user.password, "MichaelQuienv1234#")
 
@@ -51,7 +49,6 @@ class TestUser(unittest.TestCase):
         self.assertEqual(len(User.user_accounts_list), 1)
 
     def test_verify_user(self):
-        # self.new_User.save_User()
         self.new_user = User("John", "jnjauu", "jnjauu1234")
         self.new_user.save_user_account()
         another_user = User("John", "jnjauu", "jnjauu1234")
@@ -61,9 +58,6 @@ class TestUser(unittest.TestCase):
             if user.username == another_user.username and user.password == another_user.password:
                 current_user = user.username
                 return current_user
-
-        # self.assertEqual(current_user, User.verify_user(
-        #     another_user.username, another_user.password))
 
 
 if __name__ == "__main__":

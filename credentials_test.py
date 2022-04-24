@@ -26,10 +26,6 @@ class TestCredentials(unittest.TestCase):
         self.new_credentials.delete_credentials()
         self.assertEqual(len(Credentials.credentials_list), 1)
 
-    # def test_gen_password(self):
-    #     self.new_credentials.gen_password()
-    #     self.assertEqual(len(Credentials.credentials_list), 1)
-
     def test_display_credentials(self):
         self.assertEqual(Credentials.display_credentials(), Credentials.credentials_list)
 
