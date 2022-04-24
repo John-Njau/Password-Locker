@@ -1,5 +1,5 @@
 #! /usr/bin/env python3
-# import pyperclip
+
 from users import User
 from credentials import Credentials
 
@@ -169,8 +169,6 @@ def password_locker():
                             delete_credentials(site)
                             print(f"Credential deleted: \n {site.platform_name} Account\n Username:{site.username} \n "
                                   f"Password:{site.password}")
-
-                            # print("Credential deleted successfully")
                         else:
                             print("Account not found")
 
